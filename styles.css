@@ -1,0 +1,177 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500&display=swap');
+
+body {
+    background: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.article {
+    box-shadow: 0px 6px 13px -5px #48556a;
+    background-color: white;
+    margin: 72px auto 80px;
+    border-radius: 1rem;
+}
+
+
+.article > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+.article-description {
+    padding: 0 30px;
+    margin-bottom: 35px;
+}
+.article-description h1 {
+    font-size: 16px;
+    margin-top: 40px;
+    color:  hsl(217, 19%, 35%);
+    margin-bottom: 20px;
+}
+.article-description p {
+    color: hsl(214, 17%, 51%);
+    margin: 0;
+}
+.author {
+    display: flex;
+    flex-direction: column;
+}
+.author-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 32px;
+}
+.author-container .author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.author-name-date {
+    display: inline-block;
+}
+.author-container p {
+    margin: 0;
+}
+.author-container .author-img {
+    margin-right: 16px;
+}
+.author-container .author-img-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.author-name-date .name {
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.author-name-date .date {
+    color:hsl(214, 17%, 51%);
+}
+.share-wrapper {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    cursor: pointer;
+    position: relative;
+}
+.share-popup {
+    position: absolute;
+    width: 240px;
+    background-color: hsl(217, 19%, 35%);
+    bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 17px 0;
+    border-radius: 8px;
+}
+.share-popup::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    bottom: -10px;
+    display: block;
+}
+#btn {
+    border-color: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hide-popup {
+    display: none;
+}
+.link {
+    font-size: 22px;
+    color: white;
+}
+.share-popup .share {
+    text-transform: uppercase;
+    color: hsl(214, 17%, 51%);
+    letter-spacing: 6px;
+}
+
+@media screen and (min-width: 731px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .article {
+        max-width: 730px;
+        margin: 260px auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .article > img {
+        max-width: 286px;
+        border-radius: 8px 0 0 8px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .article-description {
+        padding: 0 37px;
+        margin-bottom: 21px;
+    }
+    .article-description h1 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 35px;
+    }
+    .author-container .author-img {
+        margin-right: 23px;
+    }
+    .author-img-and-title .name {
+        margin-bottom: 2px;
+    }
+    .author-container {
+        margin-bottom: 35px;
+    } 
+}
