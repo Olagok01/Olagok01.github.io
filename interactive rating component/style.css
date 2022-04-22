@@ -1,0 +1,150 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.container {
+    /* margin: 10rem auto; */
+    background-color: hsl(213, 19%, 18%);
+    max-width: 375px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    visibility: visible;
+    z-index: 100;
+}
+.img-container {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsl(207, 15%, 23%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+.text {
+    margin-left: 25px;
+    margin-right: 0;
+}
+.text h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.text p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-right: 8px;
+    max-width: 23rem;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: transparent;
+    background-color:hsl(207, 15%, 23%);
+    color: hsl(217, 12%, 63%);
+    transition: all 0.3s linear;
+    
+}
+.btn:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+.btn:focus {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+.submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 85%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.submit:hover {
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+   /*  visibility: hidden;
+    z-index: -100; */
+}
+.container-overlay {
+    background-color: hsl(213, 19%, 18%);
+    max-width: 100%;
+    padding: 20px 30px;
+    border-radius: 8px;
+    position: absolute;
+}
+.selection {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(207, 15%, 23%);
+    padding: 10px 20px;
+    border-radius: 15px;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-overlay > img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.message {
+    max-width: 375px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.message h2 {
+    color: white
+}
+.message p {
+    max-width: 300px;
+    margin: 0 auto;
+    color: hsl(217, 12%, 63%);
+}
+
+/* .display {
+    visibility: visible;
+    z-index: 100;
+} */
+.hide {
+    display: none;
+    visibility: hidden;
+    z-index: -100;
+}
