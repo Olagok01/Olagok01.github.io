@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header-center">
+                <img src="./images/logo.svg" alt="logo">
+                <div class="aside">
+                    <button class="close-btn"><img src="./images/icon-close-menu.svg" alt="close"></button>
+                    <nav class="nav">
+                        <ul>
+                            <li class="drop-down">
+                                <div class="div">
+                                    <a href="#">Features</a>
+                                <button class="nav-btn">
+                                    <span class="arrow-down" data-id="down-1"><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span>
+                                    <span class="arrow-up hide" data-id="up-1"><img src="./images/icon-arrow-up.svg" alt="arrow-up"></span>
+                                </button>
+                                </div>
+                                
+                                <div class="dropdown-menu hide-list position" data-id="features">
+                                    <div class="list"><span><img src="./images/icon-todo.svg" alt="todo"></span>  Todo list</div>
+                                    <div class="list"><span><img src="./images/icon-calendar.svg" alt="calender"></span> Calender</div>
+                                    <div class="list"><span><img src="./images/icon-reminders.svg" alt="reminders"></span> Reminders</div>
+                                    <div class="list"><span><img src="./images/icon-planning.svg" alt="planning"></span> Planning</div>
+                                </div>
+                            </li>
+                            <li class="drop-down">
+                                <div class="div">
+                                    <a href="#">Company</a>
+                                    <button class="nav-btn">
+                                        <span class="arrow-down" data-id="down"><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span>
+                                        <span class="arrow-up hide" data-id="up"><img src="./images/icon-arrow-up.svg" alt="arrow-up"></span>
+                                    </button>
+                                </div>
+                                
+                                <div class="dropdown-menu hide-list" data-id="company">
+                                    <div class="list">History</div>
+                                    <div class="list">Our Team</div>
+                                    <div class="list">Blog</div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="div">
+                                    <a href="#">Careers</a>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="div">
+                                    <a href="#">About</a>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="menu-btn"><img src="./images/icon-menu.svg" alt="menu"></button>
+                <div class="login">
+                    <a href="#">login</a>
+                    <button id="btn-inverse"><a href="#">Register</a></button>
+                </div>
+            </div>
+            <div class="display">
+                <div class="image-logo">
+                    <img src="./images/image-hero-mobile.png" class="image" alt="image">
+                </div>
+                <div class="context">
+                    <div class="title">
+                        <!-- <h1 class="start">Make remote work</h1> --> <h1>Make</h1> <h1>remote work</h1>
+                    </div>
+                    <div class="text">
+                        <p>Get your team in sync, no matter your location.
+                            Streamline processes, create team rituals and watch
+                            productivity soar.
+                        </p>
+                        <a href="#learnmore.com" target=""><button id="btn">learn more</button></a>
+                        <div class="footer-icon">
+                            <img src="./images/client-databiz.svg" alt="data">
+                            <img src="./images/client-audiophile.svg" alt="audio">
+                            <img src="./images/client-meet.svg" alt="meet">
+                            <img src="./images/client-maker.svg" alt="maker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
