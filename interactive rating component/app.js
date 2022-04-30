@@ -1,4 +1,5 @@
-const container = document.querySelector(".container");
+const frontPage = document.querySelector(".top")
+const donwnPage = document.querySelector(".bottom")
 const btns = document.querySelectorAll(".btn");
 const submit = document.querySelector(".submit");
 const selection = document.querySelector(".selection");
@@ -31,8 +32,8 @@ btns.forEach((btn)=>{
                 selection.innerHTML = `you have selected ${value} out of 5`
             }
              
-             container.classList.add("hide")
-             
+             frontPage.classList.add("hide")
+             donwnPage.classList.remove("hide")
         })
     
     })
