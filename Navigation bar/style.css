@@ -26,7 +26,7 @@ body {
 .image-logo { 
    /*  min-height: 300px; */
     position: relative;
-    height: 50vh;
+    height: 43vh;
 }
 .menu-btn {
     border: transparent;
@@ -183,7 +183,7 @@ a {
     visibility: hidden;
 }
 
-@media screen and (min-width: 792px) {
+@media screen and (min-width: 992px) {
     .container {
         max-width: 1140px;
         /* min-height: 100vh; */
@@ -220,12 +220,15 @@ a {
         margin-right: 45px;
     }
     .context {
-        width: 30vw;
+        width: 35vw;
     }
     .context .text {
         text-align: left;
         font-size: 15px;
         font-weight: 500;
+        width: 25vw;
+        margin: 0;
+        line-height: 1.5;
     }
     .context .title {
         font-size: 29px;
@@ -233,7 +236,7 @@ a {
         display: flex;
         float: right; */
         text-align: left;
-        width: 23vw;
+        width: 26vw;
     }
     .aside {
         /* display: flex;
@@ -337,5 +340,14 @@ a {
     #btn-inverse:hover {
         color:hsl(0, 0%, 8%);
         border: 2px sloid hsl(0, 0%, 8%);
+    }
+    .footer-icon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-icon > img {
+        width: 75px;
     }
 }
